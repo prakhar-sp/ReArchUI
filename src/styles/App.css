@@ -1,0 +1,85 @@
+/* App.css - Styles for Document Analysis Chat Application */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+#root {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #ffffff;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+}
+
+.document-viewer {
+    background-color: #ffffff;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.chat-interface {
+    background-color: #ffffff;
+    padding: 10px;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.citation-analysis {
+    background-color: #ffffff;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.upload-button, .delete-button, .toggle-button {
+    margin: 5px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upload-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.delete-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.toggle-button {
+    background-color: #2196F3;
+    color: white;
+}
+
+.document-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.document-item {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.document-item:hover {
+    background-color: #f1f1f1;
+}
+
+.collapsible-panel {
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+}
